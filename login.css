@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 60px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px; /* Increase the container width */
+}
+
+#login-title {
+    text-align: center;
+    font-size: 3rem; /* Increase the font size */
+    color: #333333;
+    margin-bottom: 30px; /* Add more space */
+}
+
+.form-group {
+    margin-bottom: 25px; /* Increase spacing between form elements */
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.5rem; /* Increase label font size */
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px; /* Increase input padding */
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1.25rem; /* Increase input font size */
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    color: rgba(12, 93, 186, 0.7);
+    text-decoration: none;
+    font-size: 1.25rem; /* Increase link font size */
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.btn-login {
+    background-color: rgba(12, 93, 186, 0.447);
+    color: white;
+    padding: 15px; /* Make the button larger */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.5rem; /* Increase button font size */
+}
+
+.btn-login:hover {
+    background-color: rgba(12, 93, 186, 0.7);
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.25rem; /* Increase font size of the signup link */
+}
+
+.signup-link a {
+    color: rgba(12, 93, 186, 0.7);
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        padding: 40px;
+        width: 90%;
+    }
+
+    #login-title {
+        font-size: 2rem;
+    }
+
+    .form-group input {
+        padding: 12px;
+    }
+
+    .btn-login {
+        font-size: 1.25rem;
+    }
+}

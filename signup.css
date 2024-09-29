@@ -1,0 +1,114 @@
+/* Base styles for all screen sizes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.addr {
+    width: 80%;
+    max-width: 500px;
+    background-color: rgba(12, 93, 186, 0.447);
+    margin: 20px auto;
+    padding: 20px;
+    /* text-align: center; */
+    box-shadow: 5px 5px 5px rgb(56, 54, 54);
+    border-radius: 10px;
+}
+
+#muk {
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.gmail, .gmail2 {
+    margin: 15px 0;
+}
+
+.gmail p, .gmail2 p {
+    font-size: large;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: large;
+    margin-top: 5px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.buttons a, .buttons button {
+    text-decoration: none;
+    font-size: large;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: rgba(12, 93, 186, 0.447);
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.buttons a:hover, .buttons button:hover {
+    background-color: rgba(12, 93, 186, 0.7);
+}
+
+.buttons button {
+    color: #fff;
+}
+
+/* Medium screens (tablets, 768px and above) */
+@media (max-width: 768px) {
+    .addr {
+        width: 90%;
+        font-size: large;
+    }
+
+    #muk {
+        font-size: larger;
+    }
+
+    input[type="text"], input[type="password"], input[type="email"] {
+        font-size: medium;
+    }
+
+    .buttons a, .buttons button {
+        font-size: medium;
+    }
+}
+
+/* Small screens (phones, 500px and below) */
+@media (max-width: 500px) {
+    .addr {
+        width: 95%;
+        font-size: medium;
+    }
+
+    #muk {
+        font-size: medium;
+    }
+
+    input[type="text"], input[type="password"], input[type="email"] {
+        font-size: small;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons a, .buttons button {
+        width: 80%;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
